@@ -12,10 +12,33 @@
 <body>
   <form id="load-calculator">
     <p>
-      <label></label>
+      <label for="performer-mass">Please Enter Performer(s) Weight (lbs)</label>
+      <input id="performer-mass" required name="performer-mass" type="number" min="1">
     </p>
-    
+    <p>
+      <label for="apparatus-mass">Please Enter Apparatus Weight (lbs)</label>
+      <input id="apparatus-mass" required name="apparatus-mass" type="number" min="1">
+    </p>
+    <p>
+      <label for="apparatus-dynamic-factor">Please Choose An Apparatus (Dynamic Adjustment Factor)</label>
+      <select id="apparatus-dynamic-factor" required name="apparatus-dynamic-factor">
+        <option value="1.5">Aerial Yoga (1.5)</option>
+        <option value="2">Silks (2 for drops less than 3ft.)</option>
+        <option value="3">Static Trapeze (3)</option>
+        <option value="3">silks (3 for drops 3-8ft.)</option>
+        <option value="5">Rope (5)</option>
+        <option value="5">Straps (5)</option>
+      </select>
+
+    </p>
+    <p>
+      <input type="submit" value="Calculate">
+    </p>
+    <p>
+      <label for="characteristic-load">Estimated Characteristic Load</label>
+      <output for="load-calculator" id="characteristic-load"></output>
+    </p>
   </form>
-  
+  <script src="src/loadCalculator.js" type="module"></script>
 </body>
 </html>

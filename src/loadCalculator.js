@@ -1,10 +1,9 @@
-const performerMass = 
+const performerMass = document.getElementById('performer-mass');
+const apparatusMass = document.getElementById('apparatus-mass');
+const dynamicFactor = document.getElementById('dynamic-factor');
+const totalMass = performerMass + apparatusMass;
 
+const calculatedLoad = document.getElementById('calculated-load')
 
-function add() {
+const characteristicLoad = totalMass * dynamicFactor * 6
 
-}
-
-function characteristicLoad() {
-
-}

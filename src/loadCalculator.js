@@ -5,5 +5,5 @@ const totalMass = performerMass + apparatusMass;
 
 const calculatedLoad = document.getElementById('calculated-load')
 
-const characteristicLoad = totalMass * dynamicFactor * 6
+const characteristicLoad = totalMass * dynamicFactor * 6 or totalMass * 10 whichever is greater
 

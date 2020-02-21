@@ -1,9 +1,30 @@
-const performerMass = document.getElementById('performer-mass');
-const apparatusMass = document.getElementById('apparatus-mass');
-const dynamicFactor = document.getElementById('dynamic-factor');
-const totalMass = performerMass + apparatusMass;
+// export function characteristicLoad() {
+//   const performerMass = document.getElementById('performer-mass').value;
+//   const apparatusMass = document.getElementById('apparatus-mass').value;
+//   const totalMass = performerMass + apparatusMass;
+  
+//   const dynamicFactor = document.getElementById('dynamic-factor').value;
 
-const calculatedLoad = document.getElementById('calculated-load')
+//   let result = document.getElementById('result');
 
-const characteristicLoad = totalMass * dynamicFactor * 6 or totalMass * 10 whichever is greater
+//   let characteristicLoad = totalMass * dynamicFactor * 6;
+//   result.value = characteristicLoad;
+// }
+
+
+// Stretch Goal
+// add staticLoad characteristicLoad = totalMass * 10 whichever is greater
+
+export function characteristicLoad() {
+  const performerMass = document.getElementById('performer-mass').value;
+  const apparatusMass = document.getElementById('apparatus-mass').value;
+  const totalMass = performerMass + apparatusMass;
+  
+  const dynamicFactor = document.getElementById('dynamic-factor').value;
+
+  let result = document.getElementById('result');
+
+  let characteristicLoad = totalMass * dynamicFactor * 6;
+  result.value = characteristicLoad;
+}
 

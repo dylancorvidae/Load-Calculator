@@ -7,23 +7,23 @@
   <link rel="stylesheet" href="src/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/main.css">
-  <title>Aerial Characteristic Load Estimator</title>
+  <title>Aerial Acrobatics Characteristic Load Estimator</title>
 </head>
 <body>
 
   <form id="load-calculator">
     <p>
       <label for="performer-mass">Please Enter Performer(s) Weight (lbs)</label>
-      <input id="performer-mass" required name="performer-mass" type="number" min="1">
+      <input id="performer-mass" required name="performer-mass" type="number" min="0">
     </p>
     <p>
       <label for="apparatus-mass">Please Enter Apparatus Weight (lbs)</label>
-      <input id="apparatus-mass" required name="apparatus-mass" type="number" min="1">
+      <input id="apparatus-mass" required name="apparatus-mass" type="number" min="0">
     </p>
     <p>
       <label for="dynamic-factor">Please Choose An Apparatus <br>(Dynamic Adjustment Factor)</label>
       <select id="dynamic-factor" required name="dynamic-factor">
-        <option value="1.5">Aerial Yoga (1.5)</option>
+        <option value="1">Aerial Yoga (1.5)</option>
         <option value="2">Silks (2 for drops less than 3ft.)</option>
         <option value="3">Static Trapeze (3)</option>
         <option value="3">silks (3 for drops 3-8ft.)</option>
@@ -32,7 +32,7 @@
       </select>
     </p>
     <p>
-      <input type="submit" onClick="characteristicLoad" value="Calculate">
+      <input type="button" id="calculate" value="Calculate">
     </p>
     <p>
       <label for="result">Estimated Characteristic Load</label>

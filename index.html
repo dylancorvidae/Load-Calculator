@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="src/reset.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="src/main.css">
-  <title>Aerial Acrobatics Characteristic Load Estimator</title>
+  <title>Aerial Acrobatics Characteristic Load Estimator & Rigging Gear Requirements</title>
 </head>
 <body>
 
   <form id="load-calculator">
+    <h1>Aerial Acrobatics Characteristic Load Estimator & Rigging Gear Requirements</h1>
     <p>
       <label for="performer-mass">Please Enter Performer(s) Weight (lbs)</label>
       <input id="performer-mass" required name="performer-mass" type="number" min="0">
@@ -23,20 +24,32 @@
     <p>
       <label for="dynamic-factor">Please Choose An Apparatus <br>(Dynamic Adjustment Factor)</label>
       <select id="dynamic-factor" required name="dynamic-factor" type="number">
-        <option value="1">Aerial Yoga (1.5)</option>
-        <option value="2">Silks (2 for drops less than 3ft.)</option>
-        <option value="3">Static Trapeze (3)</option>
-        <option value="3">silks (3 for drops 3-8ft.)</option>
-        <option value="5">Rope (5)</option>
-        <option value="5">Straps (5)</option>
+        <option value="1" type="number">Aerial Yoga (1.5)</option>
+        <option value="2" type="number">Silks (2 for drops less than 3ft.)</option>
+        <option value="3" type="number">Static Trapeze (3)</option>
+        <option value="3" type="number">silks (3 for drops 3-8ft.)</option>
+        <option value="5" type="number">Rope (5)</option>
+        <option value="5" type="number">Straps (5)</option>
       </select>
     </p>
     <p>
       <input type="button" id="calculate" value="Calculate">
     </p>
     <p>
-      <label for="result">Estimated Characteristic Load</label>
+      <label for="result">Estimated Characteristic Load <br>In Pounds-Force (lbf)</label>
       <input for="load-calculator" id="result">
+    </p>
+    <p>
+      <label for="conversion">Converted to Kilonewton (kN)</label>
+      <input id="conversion">
+    </p>
+    <h2>Methodology:</h2>
+    <p>
+      
+    </p>
+    <h2>Disclaimer:</h2>
+    <p>
+      This is just an estimate of possible dynamic loads in a rigging system system that goes straight down from an anchor point. This does not take into account orbital motion which puts different strains on rigging equipment. For a more accurate estimate please use a load cell sensor while running your act to determine your actual dynamic loads.
     </p>
   </form>
 

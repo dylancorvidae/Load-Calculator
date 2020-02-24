@@ -14,7 +14,7 @@ A load calculator for aerialists to determine characteristic loads for their equ
   - Different mass/weight system choices lbs/kgs
   - Enter dynamic load in lbs/kg
 
-convert lbs to kn for rigging stuff  
+convert lbs to kn for rigging gear requirements  
 add dynamic forces for different apparatus  
 
 Input fields  

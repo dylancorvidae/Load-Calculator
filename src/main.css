@@ -58,10 +58,19 @@ select {
   font-size: 1.2em;
 }
 
+#disclaimer {
+  width: 320px;
+}
+
+#disclaimer h2 {
+  color: red;
+}
+
 #methodology {
   width: 320px;
 }
 
-#disclaimer {
+#safety-notes {
   width: 320px;
+  margin: 0 0 20px 0;
 }

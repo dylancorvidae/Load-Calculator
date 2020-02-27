@@ -6,8 +6,9 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  background-color: black;
   margin: 0px;
-
 }
 
 h1 {

@@ -5,6 +5,7 @@
 :root {
   --primary-color: #000;
   --secondary-color: rgba(245, 245, 245, 0.5);
+  --gray-text: rgb(175, 175, 175);
   --font-color: whitesmoke;
   --bg-color: #000;
   --heading-color: white;
@@ -13,6 +14,7 @@
 [data-theme="light"] {
   --primary-color: whitesmoke;
   --secondary-color: #000;
+  --gray-text: rgb(35, 35, 35);
   --font-color: #000;
   --bg-color: white;
   --heading-color: #000;
@@ -129,6 +131,10 @@ input, select {
   background-color: var(--primary-color);
   border: 1px solid var(--secondary-color);
   font-size: 1.2em;
+}
+
+.gray-text {
+  color: var(--gray-text);
 }
 
 #disclaimer h2 {

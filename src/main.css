@@ -3,89 +3,50 @@
 }
 
 :root {
-  --primary-color: #9A97F3;
-  --secondary-color: #818cab;
+  --primary-color: #000;
+  --secondary-color: rgba(245, 245, 245, 0.5);
   --font-color: whitesmoke;
   --bg-color: #000;
-  --heading-color: whitesmoke;
+  --heading-color: white;
 }
 
 [data-theme="light"] {
-  --primary-color: #302AE6;
-  --secondary-color: #536390;
+  --primary-color: whitesmoke;
+  --secondary-color: #000;
   --font-color: #000;
   --bg-color: white;
   --heading-color: #000;
 }
 
 body {
+width: 320px;
+padding: 0 0 0 20px;
 font-family: 'Roboto Condensed', sans-serif;
 background-color: var(--bg-color);
 color: var(--font-color);
-max-width: 90%;
-margin: 0 auto;
 font-size: calc(1rem + 0.25vh);
-}
-
-h1 {
-  color: var(--heading-color);
-  font-size: 2rem;
-  margin-bottom: 1vh;
-}
-
-p {
-font-size: 1.1rem;
-line-height: 1.6rem;
-}
-
-a {
-color: var(--primary-color);
-text-decoration: none;
-border-bottom: 3px solid transparent;
-font-weight: bold;
-&:hover, &:focus {
-    border-bottom: 3px solid currentColor;
-}
-}
-
-section {
-max-width: 68%;
-margin: 0 auto;
-}
-
-.post-meta {
-font-size: 1rem;
-font-style: italic;
-display: block;
-margin-bottom: 4vh;
-color: var(--secondary-color);
 }
 
 nav {
 display: flex;
 justify-content: start;
-margin: 20px 0 0 20px;
+margin: 20px 0 0 0px;
+}
+
+nav p {
+  margin: 0 0 0 10px;
 }
 
 /*slider switch css */
 .theme-switch-wrapper {
 display: flex;
-align-items: center;
-
-  p {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
 }
+
 .theme-switch {
 display: inline-block;
 height: 34px;
 position: relative;
-width: 225px;
-}
-
-.theme-switch input {
-display:none;
+width: 255px;
 }
 
 .slider {
@@ -115,7 +76,7 @@ background-color: #e9ff20;
 }
 
 input:checked + .slider:before {
-transform: translateX(190px);
+transform: translateX(220px);
 }
 
 .slider.round {
@@ -141,35 +102,33 @@ body {
 }
 
 h1 {
+  color: var(--heading-color);
   width: 320px;
   font-size: 1.5em;
-  margin: 20px;
+  margin: 20px 0 20px 0;
 }
 
 h2 {
-  font-size: 1.3em;
-  margin: 20px 0px 0px 20px;
+  // font-size: 1.3em;
+  margin: 20px 0px 0px 0px;
 }
 
 h3 {
-  font-size: 1.2em;
-  margin: 20px 0px 0px 20px;
+  // font-size: 1.2em;
+  margin: 20px 0px 0px 0px;
 }
 
 p {
   display: flex;
   flex-direction: column;
-  // color: rgb(175, 175, 175);
   font-size: 1em;
-  margin: 5px 0px 0px 20px;
+  margin: 5px 0px 0px 0px;
 }
 
 form > p {
     display: flex;
     flex-direction: column;
-    // color: white;
-    font-size: 1em;
-    margin: 20px 0px 0px 20px;  
+    margin: 20px 0px 0px 0px;  
 }
 
 label {
@@ -178,21 +137,14 @@ label {
   margin: 0px 0px 5px 0px;
 }
 
-input {
-  color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(245, 245, 245, 0.5);
+input, select {
+  color: var(--font-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
   width: 320px;
   font-size: 1.2em;
 }
 
-select {
-  color: whitesmoke;
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(245, 245, 245, 0.5);
-  width: 320px;
-  font-size: 1.2em;
-}
 
 #disclaimer {
   width: 320px;

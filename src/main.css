@@ -30,6 +30,7 @@ font-family: 'Roboto Condensed', sans-serif;
 background-color: var(--bg-color);
 color: var(--font-color);
 font-size: calc(1rem + 0.25vh);
+text-align: justify;
 }
 
 nav {
